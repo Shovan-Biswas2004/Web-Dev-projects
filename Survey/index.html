@@ -1,0 +1,51 @@
+<DOCKTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title">Survey-Form</h1><hr>
+  <link  rel="stylesheet" href="styles.css"/>
+  </meta>
+  </head>
+  <body>
+    <div>
+      <main>
+    <p id="description">Welcome to my survey form . Do answer the following questions:</P>
+    <form id="survey-form">
+      <fieldset>
+        <legend> </legend>
+        <label id="name-label">Name: <input id="name" type="text" required placeholder=" Shovan Biswas"/></label>
+        <label id="email-label">Email-id: <input id="email" type="email" required placeholder="abc@gamil.com"/></label>
+        <label id="number-label">Age<input id="number" type="number" min="18" max="60" placeholder="20"/></label> 
+
+      </fieldset>
+      <fieldset>
+        <legend>Interests:</legend>
+        <select id="dropdown" required>
+          <option value="">Select</option>
+          <option value="tech"> Tech</option>
+          <option > Cultural</option>
+          <option> Philosophy</option>
+        </select>
+       
+          
+          <h4>Studies:</h4>
+
+          <label for="ug" ><input  id="ug" type="radio" class="studies" name="studies_name" value="ug"/>Under_Grad</label>
+          <label for="pg"><input type="radio" class="studies" id="pg" name="studies_name"value="pg" />Post_Grad</label>
+          <label for="doc"><input id="doc" type="radio" class="studies" name="studies_name"value="doc" />Doctorate</label>
+          <h4>Further Study Interests:</h4>
+          <label for="business"><input id="businss" type="checkbox" name="further-studies" value="business"/> Business</label>
+           <label for="research"><input id="research" type="checkbox" name="further-studies" value="research"/> Research</label>
+            <label for="entrepreneurship"><input id="entrepreneurship" type="checkbox" name="further-studies" value="entrepreneurship"/> Entrepreneurship</label>
+             <label for="phylosophy"><input id="phylosophy"type="checkbox" name="further-studies" value="phylosophy"/> phylosophy</label>
+             <h4>Personal Life:
+             <label><textarea  rows="3" cols="34" placeholder="Tell us about yourself..."></textarea>
+
+</label>
+      <input id="submit" type="submit">
+          
+    </form>
+    </main>
+    </div>
+  </body>
+</html>

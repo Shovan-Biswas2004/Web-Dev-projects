@@ -1,0 +1,93 @@
+h1,p{
+    background-color: #defcf9;
+    text-align: center;
+    font-family: cursive;
+    font-size: auto;
+    margin: auto;
+    padding-top: 2px;
+    opacity: 80%;
+    border: 0px solid #cca8e9;
+    border-radius: none;
+    box-shadow: 1px 2px 12px 4px #defcf9  ;
+    color: #210646 ;
+    font-kerning: auto;
+  }
+  body{
+    background-color: #cadefc;
+    background-image: url("https://media.gettyimages.com/id/1298136769/video/social-media-speech-bubbles-4k-looped-background-footage.jpg?s=640x640&k=20&c=Moe-fPEN_e2eL6fSmA1Sln52tzBGs6xwTXiTxYXcTHQ=");
+    background-size: cover;
+    font-family: Tahoma;
+    font-size: 30px;
+    width: 100%;
+    height: 100vh;
+    color: #210646;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    
+  }
+  label{
+    display: block;
+    margin: 0.5rem 0
+    }
+    fieldset{
+      border: 3px solid #cca8e9;
+      background-color: #c3bef0;
+      opacity: 90%;
+      
+    }
+    hr{
+      width: 50%;
+      height: 2px;
+      margin-top: 8;
+      background-color:  #cca8e9;
+  
+    }
+    form{
+      margin: 0 auto;
+      max-width : 800px;
+      min-width: 300px;
+      width: 60vw;
+    }
+    input,textarea,select{
+      width: 100%;
+      border-radius: 5px;
+      border : none;
+      margin: 10px 0 0 0;
+      height: 3rem;
+    }
+  .studies{
+    width: 20;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  legend{
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font: small-caps bold 24px/1 sans-serif;
+    line-height: 2.5;
+  }
+  
+  input[type="checkbox"]{
+     width: 20;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 4rem;
+    background-color: #cca8e9;
+    border-color: white;
+    min-width: 300px;
+    font: small-caps bold 24px/1 sans-serif;
+    
+  }
+  textarea{
+    font-size: 20;
+    height: 200;
+   
+  }
