@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    margin-top: auto;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ h2,p{
+    text-align: center;
+    margin-top: auto;
+    font-size: 25px;
+    font-family:cursive;
+}
+body{
+    background-color: bisque;
+    background-image: url(https://media.istockphoto.com/id/617742228/photo/old-dirty-and-grunge-paper-texture.jpg?s=612x612&w=0&k=20&c=z1SEoVWBhV3TS2_ul5gahs4_Oeg3gWhqkZ3eSjHJ6Rc=);
+}
+.quiz{
+    width: 80%;
+    background-color:papayawhip ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+.image , img{
+    margin-right: auto;
+}
+.text-style{
+    background-color:darksalmon;
+    padding-bottom:20px;
+}
+hr{
+    width: 50%;
+    height: 2px;
+    background-color: coral;
+    margin-top: 0px;
+ 
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: crimson;
+}
+a:active{
+    color:indianred
+}
