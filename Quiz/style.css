@@ -86,6 +86,7 @@ a:active{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 }
 fieldset{
     background-color: burlywood;
