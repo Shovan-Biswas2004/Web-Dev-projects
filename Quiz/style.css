@@ -7,6 +7,8 @@ h1{
     opacity: 90%;
     width: 55%;
     margin-left: 23%;
+    padding-top: 20px;
+    
 }
 
  h2,p{
@@ -21,12 +23,15 @@ h1{
     padding-top: 2px;
     opacity: 80%;
     border: 0px solid #cca8e9;
-    border-radius: none;
+    border-radius: 5px;
     color: #210646 ;
     font-kerning: auto;
+    background-color: rgba(255, 191, 112, 0.8);
+    box-shadow:  10px 0px 25px 10px rgb(255, 191, 112)
+    
 }
 body{
-    background-color: bisque;
+    background-color: rgb(255, 191, 112);
     background-image: url(https://media.istockphoto.com/id/617742228/photo/old-dirty-and-grunge-paper-texture.jpg?s=612x612&w=0&k=20&c=z1SEoVWBhV3TS2_ul5gahs4_Oeg3gWhqkZ3eSjHJ6Rc=);
     background-size: auto;
     font-family: Tahoma;
@@ -78,9 +83,11 @@ a:active{
 }
 fieldset{
     background-color: burlywood;
-    border: 0;
+    border: 5px solid darksalmon;
     border-radius: 20px 0 20px 0 ;
     opacity: 80%;
+    box-shadow: inset 0px 0px 25px 5px darksalmon; 
+    margin-top:20px ;
 
 }
 label{
@@ -106,13 +113,13 @@ button{
     margin: 1em auto;
     height: 2em;
     font-size: 10rem;
-    background-color: #cca8e9;
-    border-color: white;
+    background-color: indianred;
     min-width: 200px;
     font: small-caps bold 24px/1 Impact;
     opacity: 80%;
     border-radius: 5px;
-    border: 0;
+    border: 5px solid rgb(113, 5, 5);
+    box-shadow: inset 0px 0px 20px 5px rgb(113, 5, 5); 
 
 }
 form{
