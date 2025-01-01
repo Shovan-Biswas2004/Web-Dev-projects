@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif; /* Modern, clean for body */
+    color: #333;
+    background-color: #fdfdfd; /* Neutral background */
+}
+h1, h2, h3, .centered {
+    font-family: 'Playfair Display', serif; /* Elegant for headings */
+    color: #BF9B30;
+}
 .pic{
     width: 100%;
     height: 80vh;
@@ -47,6 +58,9 @@
     .logo{
         display: none;
     }
+    .explore {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
     
   }
 .card1 {
@@ -55,8 +69,8 @@
     left: 50%;
     width: 25vw;
     height: 10vh;
-    background-color: white;
-    border: 5px solid white;
+    background-color: black;
+    border: 5px solid black;
     filter: opacity(100%);
     color: black;
     transform: rotate(10deg);
@@ -66,6 +80,7 @@
     border: 5px solid  black;
     padding: none;
     font-weight: 700;
+    font-family: 'Lato', sans-serif;
 }
 .card2{
     position: absolute;
@@ -73,8 +88,8 @@
     left: 70%;
     width: 25vw;
     height: 10vh;
-    background-color: white;
-    border: 5px solid white;
+    background-color: black;
+    border: 2px solid black;
     filter: opacity(100%);
     color: black;
     transform: rotate(-5deg);
@@ -83,7 +98,7 @@
 
 .custom-shape-divider-bottom-1733823214 {
     position: absolute;
-   top: 87%;
+   top: 87.5%;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -96,6 +111,7 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 53px;
+    
 }
 
 .custom-shape-divider-bottom-1733823214 .shape-fill {
@@ -114,8 +130,8 @@
     filter: opacity(100%);
     color: white;
     
-    font-size: 40px;
-    width: 15vw;
+    font-size: 3vw;
+    width: auto;
 } 
 .menu{
     border-top: none;
@@ -129,9 +145,66 @@
     height: 10vh;
     margin-left: 100px;
     margin-top: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .restaurant{
-    background-color: whitesmoke;
-    border-radius: 30px;
+    background-color: #210745;
+    border-radius: 5px;
     margin-top: 20px;
+    
+}
+
+.style{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.submit{
+  
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color:whitesmoke;
+   
+   border-radius: 20px;
+   
+}
+.lol{
+   height: 14vw;
+}
+
+.navbar{
+    background: linear-gradient( #572364, #210745);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+a{
+    text-decoration: none;
+    color: white
+}
+a:hover{
+    color: #BF9B30;
+}
+.navbar a {
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color: #BF9B30; /* Gold highlight */
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+p{
+    color: #d1c4f4
+}
+.gold{
+    font-family: 'Lato', sans-serif;
+    color: #BF9B30;
 }
