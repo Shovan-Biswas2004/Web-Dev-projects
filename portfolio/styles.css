@@ -1,0 +1,130 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+  }
+  #navbar{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(112, 157, 199, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+    box-shadow: -3px 26px 37px rgba(112, 157, 199, 60%);
+
+     
+  }
+  .nav-elements{
+    display: flex;
+    gap: 5vw;
+    font-size: 3vh;
+    font-weight: 400;
+    align-items: center;
+    height: 100%;
+    padding-right: 2vw;
+  }
+  #navbar h1{
+    font-size: 3vw;
+    padding-left: 7vw; 
+    color: white;
+    
+  }
+  a:hover{
+    text-decoration: underline;
+    
+    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  #welcome-section{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 100px);
+    position: relative;
+    font-family: Arial, sans-serif;
+
+  }
+  .text{
+    width: 50%;
+    height: 100%;
+    
+    padding-left: 8vw ;
+    padding-top:  10vw;
+    font-size: 2vw;
+  }
+  .welcome-img{
+    height: 50%;
+    width: 50%;
+   padding-right: 25px;
+   
+  }
+  .welcome-slant{
+    width: 0px;
+
+	height: 0px;
+	border-right: 0px solid transparent;
+	border-left: 100vw solid transparent;
+	border-bottom: 5vw solid  white;
+    position: absolute;
+    top: 90%
+  } 
+  .highlight{
+    color: grey;
+  }
+  h6{
+    margin-top: -20px
+  }
+  img{
+    width: 800px;
+    height: 85vh;
+  
+  }
+  #projects{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    font-family: Arial, sans-serif;
+    
+    
+  }
+  .project-tile{
+    width: 50%;
+    padding-left: 20vw;
+    font-size: 3vh;
+    
+  }
+  
+  h2{
+    padding-left: 35vw ;
+    padding-top:  1vw;
+    font-size: 2vw;
+    font-family: Arial, sans-serif;
+  }
+  .work{
+    color: black
+  }
+  
+  @media(max-width: 1000px){
+    main{
+      height: 80%
+    }
+    img{
+      height: 63vh;
+    }
+  }
