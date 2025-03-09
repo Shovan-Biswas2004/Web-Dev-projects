@@ -8,22 +8,84 @@
     <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
     <link href="https://fonts.cdnfonts.com/css/jsmath-cmti10" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+    $('.container').mouseenter(function () {
+        $('.card').stop().animate({
+            top: '-200px'
+        }, 'slow');
+    }).mouseleave(function () {
+        $('.card').stop().animate({
+            top: 0
+        }, 'slow');
+    });
+});
+        </script>
+        
 </head>
 <body>
     <main>
+       
+
         <img src="watercolor-pink-flower-with-golden-frame_65186-2582.jpg" alt="background" class="background"/>
+        
+      
+        <h2 class="n">Happy</h2>
+        <h1 class="n">Anniversary </h1>
+        <h4 class="n">th</h4>
         <h2>Happy</h2>
         <h1>Anniversary </h1>
         <h4>th</h4>
         <h1 class="h">4</h1>
-        <div class="back"></div>
-        <div class="circle">
-          <div class="circle2"></div>
-        </div>
-        <div class="blur"></div>
         
+       
+        
+        <div class="back"></div>
+        <div id="circle" class="circle">
+          <div class="circle2">
+              <img src="fotor-202503080935.png" alt="1st pic" class="picc"/>
+          </div>
+        </div>
+        <div id="circle3" class="circle3 hidden">
+            <div class="circle4">
+              <img src="fotor-202503080935.png" alt="1st pic" class="picc"/>
+            </div>
+            
+          </div>
+        <div class="blur"></div>
+
+        <div id="container" class="container hidden">  
+            <div class="valentines">
+              <div class="envelope"></div>
+              <div class="front"></div>
+              <div class="card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdOmyQ8TzqS08cdZKS6CK5nDPdxaWBcF4898pYDM23gsoTAw6T6U5tsZNF-2ijf44C1o&usqp=CAU" class="rupee">
+              <div class="text">
+                
+                <p>Lifetime Slave Agreement<br><br>Dear Chiku<br>You have been my partner for 4 years<br> now and I cant thank you enough and so I wanna ask you<br> Will you be my slave for life ? <br>please sign for agreement<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . . . . . . .</p>
+              </div>
+                
+              <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+              </div>
+            </div>
+            </div>
+            <div class="shadow"></div>
+            </div>
+            <div class="overlap-bubble-bg"></div>
+            <div class="overlap-bubble"></div>
+            <div class="overlap-bubble-sm"></div>
+            
 
     </main>
     
+
 </body>
+<script src="script.js"></script>
 </html>
