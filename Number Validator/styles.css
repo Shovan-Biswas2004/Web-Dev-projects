@@ -1,0 +1,214 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(80deg, rgba(255,255,255),#d7dff8)
+  }
+  .phone{
+    position: absolute;
+    background-color: black;
+    width: 40vh;
+    height: 80vh;
+    right: 25vh;
+    bottom: 5vh;
+    border-radius: 50px;
+  }
+  .screen1{
+    width: 95%;
+    height: 90%;
+   
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    background: linear-gradient(80deg,rgba(255, 255, 255, 0.133), rgba(255, 255, 255,0.2278 ) , rgba(255, 255, 255, 0.0) )
+  }
+  .notch{
+    position: absolute;
+    left: 40%;
+    top: 4%;
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50px;
+  }
+  .design{
+    position: absolute;
+    top: 30%;
+    width: 80vw;
+    height: 28vw;
+    background: linear-gradient(160deg, rgb(173,193,255),#2a4084);
+    overflow: hidden;
+    
+  }
+  .sq1{
+    width : 50vh;
+    height: 70vh;
+    background: rgba(152,174,244, 0.46);
+    position: absolute;
+    top: -15%;
+    left: 5%;
+    rotate: 70deg;
+    border-radius: 50px;
+    border: 5px solid #7d9bf8;
+    border-left: none;
+  }
+  .sq2{
+  width : 40vh;
+    height: 40vh;
+    background: linear-gradient(205deg, #4961aa,#98aef4);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    rotate: 70deg;
+    border-radius: 20px;
+  
+  }
+  .sq3{
+    width : 30vh;
+    height: 30vh;
+    background-color: #4961aa;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    rotate: 70deg;
+    border-radius: 20px;
+  }
+  .sq4{
+    width : 40vh;
+    height: 40vh;
+    background-color: #4e63a6;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    rotate: 70deg;
+    border-radius: 20px;
+  }
+  .sq5{
+      width : 40vh;
+    height: 40vh;
+    background: linear-gradient(260deg, #4961aa00 , #bdcdffb5);
+    position: absolute;
+    top: -5%;
+    left: 70%;
+    rotate: 70deg;
+    border-radius: 20px;
+  }
+  .input{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 20vw;;
+    height: 20vh;
+    
+  }
+  .user-input{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    background: linear-gradient(260deg, rgba(219,219,219,0),rgba(210,212,220,0.78));
+    border: 2px solid white;
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  .check-btn{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 13vh;
+    left: 35vh;
+    border-radius: 20px;
+    background-color: rgba(0,170,27,0.90);
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  .clear-btn{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 13vh;
+    left: 15vh;
+    border-radius: 20px;
+    background-color: #e1e1e1;
+    border: 2px solid #6e85cd;
+    cursor: pointer;
+  }
+  .syncopate-bold {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  h1{
+    font-family: "Syncopate", sans-serif;
+    font-size: 72px;
+    position: absolute;
+    left: 5vh;
+  }
+  .blue{
+    color: #788dce;
+  }
+  .circle1{
+    width: 60vh;
+    height: 50vh;
+    border: 5px solid #788dce;
+    border-radius: 50%;
+    position: absolute;
+    top: -22%;
+    left: -1%;
+    background-color: rgba(119,141,206,0.0889)
+  }
+  .circle2{
+    width: 20vh;
+    height: 20vh;
+    border: 5px solid #788dce;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 79%;
+    background-color: rgba(119,141,206,0.2333)
+  }
+  h2{
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  font-size: 60px;
+  font-family: "Big Shoulders", sans-serif;;
+  color: rgba(255,255,255,0.8);
+  }
+    
+  p{
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 
+    30px;
+    position: absolute;
+    top: -70%;
+    left: 20%;
+    color: white;
+  }
+  .num{
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 25%;
+    font-size: 30px;
+    letter-spacing: 20px; 
+    line-height: 10vh;
+    opacity: 50%;
+  }
+  #results-div{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 30px;
+    color: white;
+    opacity: 50%
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

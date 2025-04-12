@@ -1,0 +1,12 @@
+.circle-container {
+    width: 200px; /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #007bff; /* Bootstrap primary color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
