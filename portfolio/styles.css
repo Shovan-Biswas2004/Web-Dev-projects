@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Koulen");
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url("https://fonts.googleapis.com/css?family=Lavishly Yours");
 html, body{
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   main{
     width: 100%;
@@ -36,16 +41,21 @@ html, body{
     padding-right: 2vw;
   }
   #navbar h1{
-    font-size: 3vw;
+    font-size: 5vw;
     padding-left: 7vw; 
-    color: white;
-    
+    color: rgba(0,0,0,43%);
+     font-family: 'Lavishly Yours';
+     font-weight: 100;
+     text-shadow:  -2px -2px 0 #AEAEAE,
+                2px -2px 0 #AEAEAE,
+                -2px 2px 0 #AEAEAE,
+                2px 2px 0 #AEAEAE,
+                -2px 0px 0 #AEAEAE,
+                2px 0px 0 #AEAEAE,
+                0px -2px 0 #AEAEAE,
+                0px 2px 0 #AEAEAE;
   }
-  a:hover{
-    text-decoration: underline;
-    
-    
-  }
+  
   a{
     text-decoration: none;
     color: white;
@@ -66,6 +76,27 @@ html, body{
     padding-left: 8vw ;
     padding-top:  10vw;
     font-size: 2vw;
+    color: #5c5c5c
+  }
+  .text h4{
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1.5vw;
+    
+  }
+  .text h1{
+    font-family: 'Koulen', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-top: -3vw;
+  }
+  .text h6{
+     margin-top: -2vw;
+     font-size: 2vw;
+  }
+  #na{
+    font-family: 'Lobster';
+    font-size: 3vw;
+    color: #5C5C5C;
+    font-weight: 100;
   }
   .welcome-img{
     height: 50%;
@@ -84,7 +115,15 @@ html, body{
     top: 90%
   } 
   .highlight{
-    color: grey;
+    color: #6894D8;
+    text-shadow:  -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                -1px 0px 0 #000,
+                2px 0px 0 #000,
+                0px -1px 0 #000,
+                0px 1px 0 #000;;
   }
   h6{
     margin-top: -20px
@@ -96,30 +135,100 @@ html, body{
   }
   #projects{
     display: flex;
-    width: 100%;
-    height: 20%;
+    width: 100vw;
+    height: 50vh;
     position: relative;
     font-family: Arial, sans-serif;
     
+    align-items: center;
+    justify-content: center;
     
   }
-  .project-tile{
-    width: 50%;
-    padding-left: 20vw;
-    font-size: 3vh;
+
+  .and{
+    width: 15vw;
+    height: 17vw;
+    background-color: black;
+    margin-top: 5vw;
+    border-radius: 0 50px 0 50px;
+    position: absolute;
+    left: 25vw;
+  }
+  .b{
+    height: 90%;
+    width: 40%;
+    background: linear-gradient(#709DC7 41%, #90CBED 81%);
     
   }
-  
+  .c{
+    width: 15vw;
+    height: 17vw;
+    background-color: antiquewhite;
+    margin-bottom: 5vw;
+    border-radius: 50px 0px 50px 0px;
+    position: absolute;
+    right: 20vw;
+    
+  }
+  .welcome-slant-rev{
+    width: 0px;
+
+	height: 0px;
+	border-left: 0px solid transparent;
+	border-right: 100vw solid transparent;
+	border-bottom: 5vw solid  #5C5C5C;
+    position: absolute;
+    top: 90%;
+    margin-top: 20px;
+    
+    margin-top: 3vw;
+    
+  } 
+  .pr_text{
+    width: 20vw;
+    color: white;
+    text-align: start;
+    justify-content: center;
+    margin-left: 12vw;
+    margin-top: 3vw;
+    font-size: larger;
+  }
+  .button{
+    margin-left: 12vw;
+    height: 3vw;
+    width: 8vw;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 200;
+  }
   h2{
     padding-left: 35vw ;
     padding-top:  1vw;
     font-size: 2vw;
     font-family: Arial, sans-serif;
   }
-  .work{
-    color: black
+  #contacts{
+    margin-top: 5.5vw;
+    background-color:#5C5C5C;
   }
   
+  .contact{
+    text-align: center;
+    font-size: 3vw;
+     font-family: 'Koulen', sans-serif;
+     color: #D9D9D9;
+     font-weight: 100;
+  }
+  .lets{
+    margin-top: -3vw;
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Lobster';
+    color: #E5FBF9;
+    font-weight: 100;
+  }
   @media(max-width: 1000px){
     main{
       height: 80%
@@ -128,3 +237,196 @@ html, body{
       height: 63vh;
     }
   }
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* For responsiveness */
+}
+
+.left, .center, .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left {
+  align-items: flex-start;
+  font-size: 2vh;
+}
+
+.right {
+  align-items: flex-end;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  padding-top: 5vw;
+}
+
+.inputs input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+}
+
+.inputs button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 45%;
+  border: 5px solid gray;
+}
+
+
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: row;
+    height: auto;
+    
+  }
+
+  #navbar h1 {
+    font-size: 8vw;
+    padding-left: 5vw;
+  }
+
+  .nav-elements {
+    flex-direction: row;
+    gap: 3vw;
+    padding-right: 3vw;
+    font-size: 4vw;
+  }
+
+  #welcome-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .welcome-slant{
+    display: none;
+  }
+  .welcome-slant-rev{
+    display: none;
+  }
+  .text {
+    width: 100%;
+    padding: 10vw 5vw 5vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .text h4 {
+    font-size: 5vw;
+  }
+
+  .text h1 {
+    font-size: 8vw;
+    margin-top: 2vw;
+  }
+
+  .text h6 {
+    font-size: 4vw;
+    margin-top: 3vw;
+  }
+
+  .welcome-img {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  h2 {
+    padding-left: 0;
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  #projects {
+    flex-direction: column;
+    height: auto;
+    padding: 5vw 0;
+  }
+
+  .and, .b, .c {
+    width: 90%;
+    margin: 3vw auto;
+    position: static;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .pr_text {
+    width: 100%;
+    margin: 5vw 0;
+    font-size: 4vw;
+    text-align: center;
+  }
+  #na{
+    font-size: 4.5vw;
+  }
+  .button {
+    margin: 0 auto 5vw;
+    width: 50vw;
+    height: auto;
+    font-size: 4.5vw;
+  }
+
+  #contacts {
+    padding: 5vw;
+  }
+
+  .contact, .lets {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5vw;
+  }
+
+  .left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .left h1, .right h1 {
+    font-size: 4.5vw;
+    word-break: break-word;
+  }
+
+  .inputs {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 5vw;
+    width: 100%;
+  }
+
+  .inputs input,
+  .inputs button {
+    width: 50%;
+    font-size: 4vw;
+  }
+
+  .inputs button {
+    padding: 10px;
+    border-radius: 50%;
+  }
+}
