@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=WDXL+Lubrifont+TC&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+   font-family: 'Lobster';
+   letter-spacing: 5px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+     background: radial-gradient(circle, 
+    #0f241b 0%,      
+    #011015 30%,      
+    #010b15 70%,          
+    #030615 100%);
+  }
+.container{
+
+    height: 70vh;
+    
+     display: flex;
+     justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 60vmin;
+    height: 60vmin;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+}
+.box{
+    font-family: 'Times New Roman', Times, serif;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 20px;
+    border: 3px solid rgba(255,255,255, 50%);
+    cursor: pointer;
+    font-size: 10vmin;
+    background-color: rgba(255, 255,  255, 5%);
+    
+}
+
+#reset{
+    font-size: 2vw;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255,  255, 50%);
+    cursor: pointer;
+    background-color:   rgba(210, 238, 255, 0.273);
+    color:  rgba(255, 255,  255, 80%);
+    margin-top: -10vw;
+
+}
+h1{
+    color: white;  
+}
