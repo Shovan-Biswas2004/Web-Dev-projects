@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Syncopate:wght@400;700&display=swap');
 .circle-container {
     width: 200px; /* Set fixed width */
     height: 200px; /* Set fixed height */
@@ -10,3 +12,55 @@
     font-weight: bold;
 }
 
+.navbar{
+    border-bottom: 2px solid; 
+    border-image: linear-gradient(to right, rgba(0,0,0,0%) 0%, rgba(255,255,255) 40%, rgba(0,0,0,0%) 100%);
+     border-image-slice: 1;
+}
+main{
+    background: linear-gradient(to bottom , #252a3f 3%, #372a33 15%, #34385f 47%, #34385f 66%, #252a3f 89%);
+     font-family: "Acme", sans-serif;
+}
+
+.read{
+    font-size: 1.8vw;
+    border-radius: 10px;
+    background-color: #f6c800;
+    color: #ffffff;
+    border: none;
+    margin-top: 1.5vw;
+    padding: 10px;
+    
+}
+.carousel-caption h1{
+  color: #bebebe;
+  margin-top: -1vw;
+
+}
+.carousel-caption p{
+    color: rgba(246,200,0, 70%);
+    font-size: larger ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.card-title2{
+    font-family: "Abel", sans-serif;
+    color: white;
+}
+.card-title3{
+    font-family: "Abel", sans-serif;
+    color: #b1b2b5;
+}
+
+.square{
+    background-color: rgba(246,200,0,80%);
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    border-radius: 50%;
+}
+.imdb{
+    margin-top: 2vw;
+    width: 6vw;
+    height: 6vw;
+    
+}
