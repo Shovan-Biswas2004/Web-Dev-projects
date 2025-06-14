@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Syncopate:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Big+Shoulders+Display:wght@100..900&family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Actor&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Press+Start+2P&family=Syncopate:wght@400;700&display=swap');
+
 .circle-container {
     width: 200px; /* Set fixed width */
     height: 200px; /* Set fixed height */
@@ -45,10 +46,14 @@ main{
 .card-title2{
     font-family: "Abel", sans-serif;
     color: white;
+      font-size: 1.2rem; /* or try 0.95rem */
+  margin-bottom: 0.25rem;
 }
 .card-title3{
     font-family: "Abel", sans-serif;
     color: #b1b2b5;
+     font-size: 0.85rem;
+  margin-bottom: 0.25rem;
 }
 
 .square{
@@ -63,4 +68,37 @@ main{
     width: 6vw;
     height: 6vw;
     
+}
+.slide-img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  object-position: top center; /* base position */
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+}
+
+.card {
+  height: 15vw;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.imdbpro{
+  font-family: "Abel", sans-serif !important;
+  font-weight: 400;
+ 
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.mainTitles{
+   font-family: "Actor", sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  padding-left: 2vw;
 }
