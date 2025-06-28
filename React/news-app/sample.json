@@ -1,0 +1,110 @@
+{
+    "status": "ok",
+    "totalResults": 9,
+    "articles": [
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "GOP's food stamp plan is found to violate Senate rules. It's the latest setback for Trump's big bill - AP News",
+            "description": "<ol><li>GOP's food stamp plan is found to violate Senate rules. It's the latest setback for Trump's big bill  AP News\r\n</li><li>Senate Official Rejects Food Aid Cuts Proposed by Republicans in Megabill  The New York Times\r\n</li><li>Senate parliamentarian knoc…",
+            "url": "https://admin.google.com/ServiceNotAllowed",
+            "urlToImage": null,
+            "publishedAt": "2025-06-21T22:05:00+00:00",
+            "content": "We are sorry, but you do not have access to Google News. Some reasons why you may not have access: \r\n<ul><li>Your account is managed by an organization that has this service turned off for its users.… [+306 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": "Reem Amro",
+            "title": "Grandfather's simple changes reversed pre-diabetes diagnosis that left him 'petrified'",
+            "description": "After a shocking pre-diabetes diagnosis, an active grandfather transformed his health by eating slower and making better food choices, lowering blood sugar levels and losing 27 pounds.",
+            "url": "https://www.foxnews.com/health/grandfathers-simple-changes-reversed-pre-diabetes-diagnosis-left-him-petrified",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2025/06/diabetessplit.jpg",
+            "publishedAt": "2025-06-21T16:59:05Z",
+            "content": "A 66-year-old grandfather who exercised daily was stunned to learn he was pre-diabetic and he says making one small change to his eating habits helped reverse it.\r\nDance teacher Will McKechnie, from … [+3177 chars]"
+        },
+        {
+            "source": {
+                "id": "the-huffington-post",
+                "name": "The Huffington Post"
+            },
+            "author": "Arthur Delaney",
+            "title": "Senate Parliamentarian Tells Republicans They Can't Do Their Big Food Benefit Cut",
+            "description": "It's a major blow to the \"Big Beautiful Bill\" and a possible godsend for state budgets.",
+            "url": "https://www.huffpost.com/entry/senate-parliamentarian-tells-republicans-cant-do-big-food-benefit-cut_n_68569f9be4b095f25277534a?origin=top-ad-recirc",
+            "urlToImage": "https://img.huffingtonpost.com/asset/6856a4d4190000dd1d247ce1.jpeg?cache=JcbiTpIWJp&ops=1200_630",
+            "publishedAt": "2025-06-21T13:44:52Z",
+            "content": "WASHINGTON A decision by the Senates rules referee will likely force Republicans to drop a major part of their so-called Big Beautiful Bill. \r\nDemocrats announced late Friday night the Senate parliam… [+3681 chars]"
+        },
+        {
+            "source": {
+                "id": "the-huffington-post",
+                "name": "The Huffington Post"
+            },
+            "author": "Arthur Delaney",
+            "title": "The Congressional Republicans Who Could Have To Get Their Hands Dirty Implementing Health, Food Benefit Cuts",
+            "description": "The so-called Big Beautiful Bill will pinch state budgets, leaving governors to pick up the slack.",
+            "url": "https://www.huffpost.com/entry/one-big-beautiful-bill-act-states-medicaid_n_6855bd68e4b0c0393cf18195?origin=top-ad-recirc",
+            "urlToImage": "https://img.huffingtonpost.com/asset/6855bddb1900008600881a57.jpeg?cache=RYKkn091yI&ops=1200_630",
+            "publishedAt": "2025-06-21T12:00:21Z",
+            "content": "WASHINGTON Republicans on Capitol Hill are drafting legislation that would cut federal funding for critical health and food safety programs, essentially asking the nations 50 states to do more for th… [+8864 chars]"
+        },
+        {
+            "source": {
+                "id": "buzzfeed",
+                "name": "Buzzfeed"
+            },
+            "author": null,
+            "title": "Newsletters",
+            "description": "BuzzFeed has breaking news, vital journalism, quizzes, videos, celeb news, Tasty food videos, recipes, DIY hacks, and all the trending buzz you’ll want to share with your friends. Copyright BuzzFeed, Inc. All rights reserved.",
+            "url": "https://www.buzzfeed.com/newsletters?ref=hplego",
+            "urlToImage": "data:image/png;base64,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",
+            "publishedAt": "2025-06-20T10:22:26.9047633Z",
+            "content": "Economy Hate Watchmonthly\r\nTrump promised to bring prices way, way down. So, as a pro-hater, I'm keeping track of Trump's economy right here. By Alexa Lisitza"
+        },
+        {
+            "source": {
+                "id": "the-hill",
+                "name": "The Hill"
+            },
+            "author": "Saul Elbein",
+            "title": "Trump cuts to NOAA, NASA ‘blinding’ farmers to risks, scientists warn",
+            "description": "The Trump administration’s cuts to climate research and federal weather forecasting agencies are “blinding” the U.S. to oncoming threats to its food supply — and kneecapping efforts to protect it. As Congress debates its own research and forecasting cuts, a s…",
+            "url": "https://thehill.com/policy/equilibrium-sustainability/5357564-trump-cuts-noaa-nasa-farmers-climate-change-food-supply/",
+            "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2025/06/Weather_Elbein_AP_NicoleNeri.jpg?w=1280",
+            "publishedAt": "2025-06-18T18:37:52Z",
+            "content": "Skip to content\r\nThe Trump administration’s cuts to climate research and federal weather forecasting agencies are “blinding” the U.S. to oncoming threats to its food supply — and kneecapping efforts … [+7876 chars]"
+        },
+        {
+            "source": {
+                "id": "the-next-web",
+                "name": "The Next Web"
+            },
+            "author": "Siôn Geschwindt",
+            "title": "Mobility giant Bolt adopts self-driving Starship robots for food delivery",
+            "description": "Bolt plans to roll out thousands of the robots across multiple countries, starting in its home city of Tallinn later this year.",
+            "url": "http://thenextweb.com/news/mobility-giant-bolt-adopts-self-driving-starship-robots-for-food-delivery",
+            "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F06%2Fbolt-starship-robot-delivery.jpg&signature=c902ce701ce95e20f6fd703a50ad52ca",
+            "publishedAt": "2023-06-22T09:17:15Z",
+            "content": "European ride-hailing firm Bolt will start using self-driving robots to deliver customers food as part of a new partnership with fellow Estonian company Starship Technologies, announced yesterday.  \r… [+2447 chars]"
+        },
+        {
+            "source": {
+                "id": "the-times-of-india",
+                "name": "The Times of India"
+            },
+            "author": "Dipak K Dash",
+            "title": "Government to provide 5 kg free food grains to poor for May & June",
+            "description": "India News: The government on Friday announced to provide 5 kg free food grains to the poor for May and June 2021. This will cover nearly 80 crore beneficiaries u",
+            "url": "http://timesofindia.indiatimes.com/india/government-to-provide-5-kg-free-food-grains-to-poor-for-may-june/articleshow/82213582.cms",
+            "urlToImage": "https://static.toiimg.com/thumb/msid-82213583,width-1070,height-580,imgsize-1921513,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+            "publishedAt": "2021-04-23T04:23:00Z",
+            "content": null
+        }
+    ]
+}

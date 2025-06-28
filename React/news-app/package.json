@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "news-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2",
     "react-scripts": "5.0.1",
+    "react-top-loading-bar": "^3.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
