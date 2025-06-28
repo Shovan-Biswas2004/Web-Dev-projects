@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas</title>
+    <title>MK-8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Press+Start+2P&family=Syncopate:wght@400;700&display=swap');
         *{
@@ -15,7 +16,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            
+            background-image: url("https://plus.unsplash.com/premium_photo-1675264398145-7aa3166669de?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8");
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             overflow-x: hidden;
         }
         canvas{
             border: 1px solid black;
@@ -24,21 +29,146 @@
     </style>
 </head>
 <body>
+    
     <div style="position: relative; display: inline-block;">
-        <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
-            <div style="position: relative;  width: 100%; display: flex; justify-content: flex-end;border: 4px solid whitesmoke; border-right: none;border-radius:  30px 0px 0px 30px;">
-            <div style="background-color: yellow; height: 40px; width: 100%;border-radius:  30px 0px 0px 30px;" ></div>
-            <div style="position: absolute; background-color: maroon; top: 0; bottom: 0; right: 0; width: 100%;border-radius:  30px 0px 0px 30px;" id="playerHealth"></div>
+        <img style="height: 9vh;width: 30vw; position: absolute; top: -4.2vw; left: 17vw; background-color: rgba(255, 255, 255, 0.385); border-radius: 30px;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dddb8beb-7509-4c66-bc59-5e64fc25d614/deal21v-287a23e6-e498-4fb0-9abd-251693bf67b9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkZGI4YmViLTc1MDktNGM2Ni1iYzU5LTVlNjRmYzI1ZDYxNFwvZGVhbDIxdi0yODdhMjNlNi1lNDk4LTRmYjAtOWFiZC0yNTE2OTNiZjY3YjkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IIjZY793cfRTuJvtX29T_NORw6lavlHsEg5l1ft8yTA" />
+        <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 30px;">
+            <div style="position: relative;  width: 80%; display: flex; justify-content: flex-end; border-right: none;border-radius:  30px 0px 0px 30px;">
+            <div style="background-color: yellow; height: 40px; width: 90%;border-radius:  30px 0px 0px 30px;" ></div>
+            <div style="position: absolute; background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); top: 0; bottom: 0; right: 0; width: 90%;border-radius:  30px 0px 0px 30px;" id="playerHealth"></div>
             </div>
-            <div style="background-color: black; height: 60px; width: 150px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: aliceblue;border: 4px solid whitesmoke;font-family: 'Press Start 2P', system-ui; " id="clock"></div>
-            <div style="position: relative;  width: 100%;border: 4px solid whitesmoke; border-left: none; border-radius: 0px 30px 30px 00px;">
-            <div style="background-color: yellow; height: 40px;border-radius:  0px 30px 30px 00px;" ></div>
-            <div style="position: absolute; background-color: #00498E; top: 0; bottom: 0; left: 0; right: 0;border-radius: 0px 30px 30px 00px;" id="enemyHealth"></div>
+            <div style="background-color: black; height: 60px; width: 200px;border-radius: 80%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: aliceblue;border: 4px solid rgba(255, 226, 226, 0.262);font-family: 'Press Start 2P', system-ui; " id="clock"></div>
+            <div style="position: relative;  width: 80%; border-left: none; border-radius: 0px 30px 30px 00px;">
+            <div style="background-color: yellow; height: 40px;width: 90%;border-radius:  0px 30px 30px 00px;" ></div>
+            <div style="position: absolute;width: 90%; background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 38, 255)); top: 0; bottom: 0; left: 0; right: 0;border-radius: 0px 30px 30px 00px;" id="enemyHealth"></div>
             </div>
         </div>
-    <div style="position: absolute; display: none; align-items: center; justify-content: center; color: aliceblue; top: 0; left: 0; right: 0; bottom: 0; font-family: 'Press Start 2P', system-ui; font-size: 2vw;" id = "text">Tie</div>    
-    <canvas id="board"></canvas>
+        <img src="./assets/healthbar1.png" style="position: absolute;width: 35vw;height: 15vh; left: -24px; ;margin: 0; top: 5px;"/>
+
+        
+      <div style=" display: flex; flex-direction: column; position: absolute; left: -14vw; top: 11vw; z-index: 1; gap: 8px; padding: 10px; border-radius: 10px;">
+    <h1 style="color: white; font-family: 'Press Start 2P', system-ui; margin: 0 0 15px 0; font-size: 15px; left: -20px;">INSTRUCTION</h1>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;">W</h2>
     </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Jump</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;">A</h2>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Left</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;">D</h2>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Right</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;">F</h2>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Attack 1</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 80px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h1 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 10px; margin: 0;"><strong>Space</strong></h1>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Attack 2</strong></h1>
+  </div>
+</div>
+
+        <img src="./assets/healthbar2.png" style="position: absolute;width: 35vw;height: 15vh; right: -24px; ;margin: 0; top: 2px;"/>
+
+         <div style=" display: flex; flex-direction: column; position: absolute; right: -15vw; top: 11vw; z-index: 1; gap: 8px; padding: 10px; border-radius: 10px;">
+    <h1 style="color: white; font-family: 'Press Start 2P', system-ui; margin: 0 0 15px 0; font-size: 15px; left: -20px;">INSTRUCTION</h1>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;"><i class="fa-solid fa-arrow-up"></i></h2>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Jump</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;"><i class="fa-solid fa-arrow-left"></i></h2>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Left</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;"><i class="fa-solid fa-arrow-right"></i></h2>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Right</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h2 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 12px;">0</h2>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Attack 1</strong></h1>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 80px; height: 40px; background-color: black; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+      <h1 style="color: aliceblue; font-family: 'Press Start 2P', system-ui; font-size: 10px; margin: 0;"><strong>Enter</strong></h1>
+    </div>
+    <h1 style="margin: 0; color: white; font-family: 'Abel', sans-serif; font-size: 20px;"><strong>-- Attack 2</strong></h1>
+  </div>
+</div>
+
+    <div style="position: absolute; display: none; align-items: center; justify-content: center; color: aliceblue; top: 0; left: 0; right: 0; bottom: 0; font-family: 'Press Start 2P', system-ui; font-size: 2vw;" id = "text">Tie</div>  
+<div id="fightText" style="
+  position: absolute;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 2vw;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1000;
+  display: flex;
+">FIGHT!</div>
+
+ 
+     <img style="position: absolute; left: -19.5vw; width: 23vw; height: 40vw;" src="https://static.vecteezy.com/system/resources/thumbnails/032/417/393/small_2x/luxury-golden-red-islamic-royal-title-frame-arabic-style-text-box-banner-clipart-free-png.png"/>
+     <img style="position: absolute; right: -19.5vw; width: 23vw; height: 40vw;" src="https://static.vecteezy.com/system/resources/thumbnails/032/417/393/small_2x/luxury-golden-red-islamic-royal-title-frame-arabic-style-text-box-banner-clipart-free-png.png"/>
+    <canvas id="board" ></canvas>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+  <button id="restartButton" style="
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Press Start 2P', system-ui;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+     /* Initially hidden */
+     position: absolute; /* ✅ */
+    top: 45vw; /* ✅ center vertically */
+    left: 50%; /* ✅ center horizontally */
+    transform: translate(-50%, -50%); /* ✅ align center */
+    z-index: 9999; 
+  ">
+    Restart
+  </button>
+</div>
 
     <script src="classes.js"></script>
     <script src="script.js"></script>

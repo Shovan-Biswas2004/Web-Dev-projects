@@ -5,6 +5,20 @@ const playerHealth = document.getElementById("playerHealth");
 const clock = document.getElementById("clock")
 const text = document.getElementById("text")
 
+const fightText = document.getElementById("fightText");
+
+// Show it right after load
+function showFightText() {
+  fightText.style.opacity = 1; // Make it visible
+  setTimeout(() => {
+    fightText.style.opacity = 0; // Fade out after 1.5 sec
+  }, 2000);
+}
+
+// Call it at the start
+
+
+
 const max_Width = 1024;
 const max_Height = 576;
 canvas.width = max_Width;
@@ -12,6 +26,7 @@ canvas.height = max_Height;
 
 c.fillRect(0,0,max_Width,max_Height);
 const gravity = 0.2;
+let gameOver = false;
 
 var backgroundd = ["./assets/background.png","./assets/mk.jpg","./assets/pekka.jpg"];
 const selectedBackground = backgroundd[Math.floor(Math.random() * backgroundd.length)];
@@ -139,8 +154,10 @@ function rectangularCollision({rectangle1, rectangle2}) {
 function determineWinner({player,enemy,timeId}){
     clearTimeout(timeId)
     text.style.display = "flex";
+     document.getElementById("restartButton").style.display = "inline-block";
     if(player.health===enemy.health){
        text.innerHTML= "Tie";
+       gameOver= true;
       }
     else if(player.health>enemy.health){
         text.innerHTML = "Player 1 won";
@@ -162,10 +179,12 @@ function clockTimer(){
      determineWinner({player,enemy,timeId});
     }
 }
+showFightText();
 clockTimer();
 
 function animate() {
     window.requestAnimationFrame(animate);
+    if (gameOver) return;
     c.fillStyle = "black";
      c.fillRect(0,0,max_Width,max_Height);
      background.update();
@@ -174,7 +193,7 @@ function animate() {
     }
      player.update();
      enemy.update()
-
+    
      player.velocity.x =0;
      enemy.velocity.x =0;
 
@@ -365,3 +384,7 @@ window.addEventListener("keyup", (event)=>{
         break;
    }
 })
+
+document.getElementById("restartButton").addEventListener("click", () => {
+    location.reload();
+});
