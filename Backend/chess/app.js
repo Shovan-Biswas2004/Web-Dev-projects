@@ -32,6 +32,7 @@ io.on('connection', (uniquesocket)=>{
     } else{
         uniquesocket.emit("spectatorRole");
     }
+    uniquesocket.emit("boardState", chess.fen());
     uniquesocket.on("disconnect",function(){
         if(uniquesocket.id=== players.white){
             delete players.white;
@@ -39,6 +40,9 @@ io.on('connection', (uniquesocket)=>{
         else if(uniquesocket.id === players.black){
             delete players.black;
         }
+        chess.reset();
+        io.emit("playerDisconnected");
+        io.emit("boardState", chess.fen());
     });
     uniquesocket.on("move", (move)=>{
         try{

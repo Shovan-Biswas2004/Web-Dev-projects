@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
-    <style>
-  .chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Document</title>
+  <style>
+    .chessboard {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+    }
 
-  .square {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .square {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  .light {
-    background-color: #f0d9b5;
-  }
+    .light {
+      background-color: #f0d9b5;
+    }
 
-  .dark {
-    background-color: #b58863;
-  }
+    .dark {
+      background-color: #b58863;
+    }
 
-  .piece {
-    font-size: 32px;
-    cursor: grab;
-  }
-  .chessboard.flipped {
-  transform: rotate(180deg);
-}
+    .piece {
+      font-size: 32px;
+      cursor: grab;
+    }
 
-.chessboard.flipped .piece {
-  transform: rotate(180deg);
-}
-  
-</style>
+    .chessboard.flipped {
+      transform: rotate(180deg);
+    }
+
+    .chessboard.flipped .piece {
+      transform: rotate(180deg);
+    }
+  </style>
 
 </head>
+
 <body>
-    <div class="w-full h-screen bg-zinc-800 flex items-center justify-center">
+
+  <div class="w-full h-screen bg-zinc-800 flex flex-row items-center justify-center gap-10">
+    
+    <div id="white-captures" class="grid grid-cols-2 gap-2 w-24 bg-zinc-700/30 p-2 rounded-lg min-h-[200px] content-start"></div>
+
+    <div class="flex flex-col items-center gap-4">
+        <div id="status" class="text-white text-lg"></div>
         <div class="chessboard w-96 h-96 bg-red-400"></div>
     </div>
-    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/js/chess.js"></script>
+
+    <div id="black-captures" class="grid grid-cols-2 gap-2 w-24 bg-zinc-700/30 p-2 rounded-lg min-h-[200px] content-start"></div>
+  </div>
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+    integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"
+    integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/chess.js"></script>
 </body>
+
 </html>
